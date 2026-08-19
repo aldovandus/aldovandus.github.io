@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "title": "Aldo Vandus — AI Full Stack Developer",
+    "description": "Portfolio di Aldo Vandus, Senior Full Stack Developer in transizione verso AI Full Stack / AI Application Engineer."
+  },
+  "nav": {
+    "projects": "Progetti",
+    "about": "About",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "name": "Aldo Vandus",
+    "headline": "Senior Full Stack → AI Full Stack / AI Application Engineer",
+    "subtitle": "Oltre 10 anni di esperienza nello sviluppo di applicazioni web e mobile complesse. Progetto architetture scalabili end-to-end con React, Next.js e TypeScript, accelerando delivery e qualità con strumenti AI-assisted.",
+    "ctaProjects": "Vedi progetti",
+    "ctaContact": "Contattami",
+    "profileAlt": "Foto profilo di Aldo Vandus"
+  },
+  "home": {
+    "featuredTitle": "Progetti in evidenza",
+    "featuredSubtitle": "Selezione di lavori recenti — dalla piattaforma enterprise al mobile, con focus su performance e AI.",
+    "stackStrip": "Stack attuale: React · Next.js · TypeScript · Supabase · Node.js · AI-assisted development",
+    "learnMore": "Scopri di più"
+  },
+  "projects": {
+    "title": "Progetti",
+    "subtitle": "Case study e demo dei lavori più rilevanti — architettura, stack e risultati misurabili.",
+    "caseStudy": "Case study",
+    "liveDemo": "Demo live"
+  },
+  "caseStudy": {
+    "overview": "Overview",
+    "problem": "Il problema",
+    "solution": "Soluzione",
+    "results": "Risultati",
+    "stack": "Stack tecnico",
+    "backToProjects": "Tutti i progetti"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Percorso, approccio e stack — con un focus crescente sull'AI application engineering.",
+    "journeyTitle": "Percorso",
+    "approachTitle": "Approccio",
+    "stackTitle": "Stack attuale",
+    "aiTitle": "Focus AI",
+    "journey": [
+      {
+        "period": "2024 – Attuale",
+        "role": "Senior Frontend Engineer — Parsec 3.26 (MASE)",
+        "description": "Piattaforma enterprise per mappatura suscettività franosa. Microfrontend, WebSocket real-time, data visualization con Plotly.js."
+      },
+      {
+        "period": "2021 – 2024",
+        "role": "Senior Frontend Engineer — ShopFully",
+        "description": "Piattaforme SaaS enterprise web e mobile ad alto traffico. React, Next.js, React Native, GraphQL, AWS. +40% MAU in 18 mesi."
+      },
+      {
+        "period": "2020 – 2021",
+        "role": "Frontend / Mobile Developer — PromoQui",
+        "description": "App mobile retail ad alto traffico con React Native, GraphQL e mentoring di team junior."
+      },
+      {
+        "period": "2016 – 2020",
+        "role": "Full Stack Developer — Freelance",
+        "description": "Applicazioni custom end-to-end: analisi, sviluppo, deploy e manutenzione con React, Laravel e Node.js."
+      }
+    ],
+    "approach": [
+      "Ownership end-to-end: architettura, backend, frontend, deploy e manutenzione.",
+      "Performance e UX come priorità — riduzione re-render, caching, real-time dove serve.",
+      "AI-assisted development con Cursor e Claude Code per accelerare delivery e qualità del codice.",
+      "Codice tipato, testabile e manutenibile — monorepo, API tipate, design system coerenti."
+    ],
+    "stack": {
+      "frontend": "React, Next.js, React Native, TypeScript, TanStack Query, Zustand, Tailwind CSS, Shadcn/UI, Radix UI",
+      "backend": "Node.js, Hono, oRPC, tRPC, Supabase, PostgreSQL, Payload CMS, Better Auth, REST API",
+      "ai": "Cursor, Claude Code, AI Agents, MCP Server, Prompt Engineering, Context Engineering",
+      "cloud": "AWS, Docker, GitHub Actions, CI/CD, Dokploy, Turborepo"
+    },
+    "aiFocus": "Negli ultimi anni ho integrato profondamente strumenti AI nel mio workflow di sviluppo: agenti multi-agent per automatizzare task ripetitivi, MCP server per integrazioni avanzate, e context engineering per migliorare la qualità del codice generato. Obiettivo: AI Application Engineer che costruisce prodotti reali, non solo demo."
+  },
+  "contact": {
+    "title": "Contatti",
+    "subtitle": "Hai un progetto in mente o vuoi collaborare? Scrivimi — rispondo entro 24 ore.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn"
+  },
+  "footer": {
+    "builtWith": "Built with Next.js & Tailwind"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "title": "Aldo Vandus — AI Full Stack Developer",
+    "description": "Portfolio of Aldo Vandus, Senior Full Stack Developer transitioning to AI Full Stack / AI Application Engineer."
+  },
+  "nav": {
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Aldo Vandus",
+    "headline": "Senior Full Stack → AI Full Stack / AI Application Engineer",
+    "subtitle": "10+ years building complex web and mobile applications. I design scalable end-to-end architectures with React, Next.js and TypeScript, accelerating delivery and code quality with AI-assisted tools.",
+    "ctaProjects": "View projects",
+    "ctaContact": "Get in touch",
+    "profileAlt": "Profile photo of Aldo Vandus"
+  },
+  "home": {
+    "featuredTitle": "Featured projects",
+    "featuredSubtitle": "A selection of recent work — from enterprise platforms to mobile apps, with a focus on performance and AI.",
+    "stackStrip": "Current stack: React · Next.js · TypeScript · Supabase · Node.js · AI-assisted development",
+    "learnMore": "Learn more"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Case studies and demos of my most relevant work — architecture, stack and measurable results.",
+    "caseStudy": "Case study",
+    "liveDemo": "Live demo"
+  },
+  "caseStudy": {
+    "overview": "Overview",
+    "problem": "The problem",
+    "solution": "Solution",
+    "results": "Results",
+    "stack": "Tech stack",
+    "backToProjects": "All projects"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Journey, approach and stack — with a growing focus on AI application engineering.",
+    "journeyTitle": "Journey",
+    "approachTitle": "Approach",
+    "stackTitle": "Current stack",
+    "aiTitle": "AI focus",
+    "journey": [
+      {
+        "period": "2024 – Present",
+        "role": "Senior Frontend Engineer — Parsec 3.26 (MASE)",
+        "description": "Enterprise platform for landslide susceptibility mapping. Microfrontends, real-time WebSocket, data visualization with Plotly.js."
+      },
+      {
+        "period": "2021 – 2024",
+        "role": "Senior Frontend Engineer — ShopFully",
+        "description": "High-traffic enterprise SaaS web and mobile platforms. React, Next.js, React Native, GraphQL, AWS. +40% MAU in 18 months."
+      },
+      {
+        "period": "2020 – 2021",
+        "role": "Frontend / Mobile Developer — PromoQui",
+        "description": "High-traffic retail mobile app with React Native, GraphQL and junior team mentoring."
+      },
+      {
+        "period": "2016 – 2020",
+        "role": "Full Stack Developer — Freelance",
+        "description": "End-to-end custom applications: analysis, development, deployment and maintenance with React, Laravel and Node.js."
+      }
+    ],
+    "approach": [
+      "End-to-end ownership: architecture, backend, frontend, deployment and maintenance.",
+      "Performance and UX as priorities — reduced re-renders, caching, real-time where needed.",
+      "AI-assisted development with Cursor and Claude Code to accelerate delivery and code quality.",
+      "Typed, testable and maintainable code — monorepos, typed APIs, consistent design systems."
+    ],
+    "stack": {
+      "frontend": "React, Next.js, React Native, TypeScript, TanStack Query, Zustand, Tailwind CSS, Shadcn/UI, Radix UI",
+      "backend": "Node.js, Hono, oRPC, tRPC, Supabase, PostgreSQL, Payload CMS, Better Auth, REST API",
+      "ai": "Cursor, Claude Code, AI Agents, MCP Server, Prompt Engineering, Context Engineering",
+      "cloud": "AWS, Docker, GitHub Actions, CI/CD, Dokploy, Turborepo"
+    },
+    "aiFocus": "Over the past years I've deeply integrated AI tools into my development workflow: multi-agent systems to automate repetitive tasks, MCP servers for advanced integrations, and context engineering to improve generated code quality. Goal: AI Application Engineer building real products, not just demos."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind or want to collaborate? Drop me a line — I reply within 24 hours.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn"
+  },
+  "footer": {
+    "builtWith": "Built with Next.js & Tailwind"
+  }
+}
