@@ -14,7 +14,7 @@ technologies:
   - Supabase
   - Zustand
 featured: true
-image: /projects/carmine-nolo.svg
+image: /projects/carmine-nolo.png
 ---
 
 <!-- it -->

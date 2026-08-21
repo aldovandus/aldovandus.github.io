@@ -1,8 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import type { Project } from "@/lib/projects";
-import { getLocalizedValue } from "@/lib/projects";
+import type { Project } from "@/lib/project-types";
+import { getLocalizedValue } from "@/lib/project-types";
 import type { Locale } from "@/i18n/routing";
 import { TechTags } from "./TechTags";
 
@@ -31,7 +33,7 @@ export function ProjectCard({ project, locale }: ProjectCardProps) {
       </div>
 
       <div className="flex flex-1 flex-col p-6">
-        <h3 className="text-lg font-semibold tracking-tight text-foreground transition-colors group-hover:text-accent">
+        <h3 className="font-display text-lg font-semibold tracking-tight text-foreground transition-colors group-hover:text-accent">
           {getLocalizedValue(project.title, locale)}
         </h3>
 

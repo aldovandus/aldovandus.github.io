@@ -16,7 +16,7 @@ technologies:
   - Turborepo
   - Dokploy
 featured: true
-image: /projects/gestionale-asi.svg
+image: /projects/gestionale-asi.png
 ---
 
 <!-- it -->

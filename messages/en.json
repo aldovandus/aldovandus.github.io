@@ -12,14 +12,20 @@
     "name": "Aldo Vandus",
     "headline": "Senior Full Stack → AI Full Stack / AI Application Engineer",
     "subtitle": "10+ years building complex web and mobile applications. I design scalable end-to-end architectures with React, Next.js and TypeScript, accelerating delivery and code quality with AI-assisted tools.",
+    "availability": "Open to collaborations",
     "ctaProjects": "View projects",
     "ctaContact": "Get in touch",
+    "ctaCv": "Download CV",
     "profileAlt": "Profile photo of Aldo Vandus"
   },
   "home": {
+    "featuredLabel": "Selected work",
     "featuredTitle": "Featured projects",
     "featuredSubtitle": "A selection of recent work — from enterprise platforms to mobile apps, with a focus on performance and AI.",
-    "stackStrip": "Current stack: React · Next.js · TypeScript · Supabase · Node.js · AI-assisted development",
+    "ctaLabel": "Next step",
+    "ctaTitle": "Building or scaling a product?",
+    "ctaSubtitle": "Let's talk — current stack: React · Next.js · TypeScript · Supabase · Node.js · AI-assisted development.",
+    "ctaContact": "Message me",
     "learnMore": "Learn more"
   },
   "projects": {
@@ -83,9 +89,13 @@
     "title": "Contact",
     "subtitle": "Have a project in mind or want to collaborate? Drop me a line — I reply within 24 hours.",
     "emailLabel": "Email",
-    "linkedinLabel": "LinkedIn"
+    "linkedinLabel": "LinkedIn",
+    "cvLabel": "Resume"
   },
   "footer": {
-    "builtWith": "Built with Next.js & Tailwind"
+    "builtWith": "Built with Next.js & Tailwind",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "cv": "CV"
   }
 }

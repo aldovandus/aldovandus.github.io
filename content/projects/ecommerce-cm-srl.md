@@ -17,7 +17,7 @@ technologies:
   - Zustand
   - TanStack Query
 featured: true
-image: /projects/ecommerce-cm-srl.svg
+image: /projects/ecommerce-cm-srl.png
 ---
 
 <!-- it -->

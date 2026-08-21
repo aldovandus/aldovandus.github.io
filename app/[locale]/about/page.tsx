@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ProfilePhoto } from "@/components/ProfilePhoto";
 import { SectionHeading } from "@/components/SectionHeading";
+import { Link } from "@/i18n/navigation";
 
 type Props = PageProps<"/[locale]/about">;
 
@@ -10,6 +11,7 @@ export default async function AboutPage({ params }: Props) {
 
   const t = await getTranslations("about");
   const hero = await getTranslations("hero");
+  const home = await getTranslations("home");
   const journey = t.raw("journey") as Array<{
     period: string;
     role: string;
@@ -41,8 +43,12 @@ export default async function AboutPage({ params }: Props) {
               <p className="text-xs font-semibold uppercase tracking-wider text-accent">
                 {item.period}
               </p>
-              <h3 className="mt-1 font-semibold text-foreground">{item.role}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{item.description}</p>
+              <h3 className="font-display mt-1 font-semibold text-foreground">
+                {item.role}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>
@@ -56,7 +62,7 @@ export default async function AboutPage({ params }: Props) {
           {approach.map((item) => (
             <li
               key={item}
-              className="card flex gap-4 p-5 text-sm leading-relaxed text-muted"
+              className="flex gap-4 border-b border-border/70 py-4 text-sm leading-relaxed text-muted last:border-0"
             >
               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
               {item}
@@ -69,9 +75,9 @@ export default async function AboutPage({ params }: Props) {
         <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-accent">
           {t("stackTitle")}
         </h2>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2">
           {Object.entries(stack).map(([key, value]) => (
-            <div key={key} className="card p-5">
+            <div key={key} className="border-t border-border pt-4">
               <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-accent">
                 {key}
               </h3>
@@ -81,12 +87,15 @@ export default async function AboutPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="card animate-fade-in overflow-hidden">
-        <div className="border-l-4 border-accent bg-accent-muted/30 p-8">
-          <h2 className="mb-4 text-xl font-semibold tracking-tight text-foreground">
+      <section className="cta-band animate-fade-in overflow-hidden">
+        <div className="p-8 sm:p-10">
+          <h2 className="font-display mb-4 text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
             {t("aiTitle")}
           </h2>
           <p className="leading-relaxed text-muted">{t("aiFocus")}</p>
+          <Link href="/contact" className="btn-primary mt-8">
+            {home("ctaContact")}
+          </Link>
         </div>
       </section>
     </div>

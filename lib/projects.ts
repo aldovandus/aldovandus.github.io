@@ -1,21 +1,10 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import type { Locale } from "@/i18n/routing";
+import type { LocalizedString, Project } from "@/lib/project-types";
 
-export type LocalizedString = Record<Locale, string>;
-
-export type Project = {
-  slug: string;
-  title: LocalizedString;
-  description: LocalizedString;
-  year: number;
-  technologies: string[];
-  liveUrl?: string;
-  featured: boolean;
-  image: string;
-  content: LocalizedString;
-};
+export type { LocalizedString, Project } from "@/lib/project-types";
+export { getLocalizedValue } from "@/lib/project-types";
 
 const projectsDirectory = path.join(process.cwd(), "content/projects");
 
@@ -82,11 +71,4 @@ export function getProjectBySlug(slug: string): Project | undefined {
 
 export function getFeaturedProjects(): Project[] {
   return getAllProjects().filter((project) => project.featured);
-}
-
-export function getLocalizedValue(
-  value: LocalizedString,
-  locale: Locale,
-): string {
-  return value[locale];
 }

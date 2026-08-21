@@ -16,7 +16,7 @@ technologies:
   - Shadcn/UI
 liveUrl: https://www.numenrestaurant.it
 featured: false
-image: /projects/numen-restaurant.svg
+image: /projects/numen-restaurant.png
 ---
 
 <!-- it -->

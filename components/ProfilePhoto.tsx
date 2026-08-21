@@ -11,13 +11,13 @@ type ProfilePhotoProps = {
 const sizeClasses = {
   sm: "h-24 w-24",
   md: "h-32 w-32",
-  lg: "h-44 w-44 sm:h-52 sm:w-52",
+  lg: "h-48 w-48 sm:h-56 sm:w-56",
 } as const;
 
 const sizePixels = {
   sm: 96,
   md: 128,
-  lg: 208,
+  lg: 224,
 } as const;
 
 export function ProfilePhoto({
@@ -28,7 +28,7 @@ export function ProfilePhoto({
 }: ProfilePhotoProps) {
   return (
     <div
-      className={`relative shrink-0 overflow-hidden rounded-2xl border border-border bg-surface shadow-[var(--shadow)] ring-4 ring-accent-muted ${sizeClasses[size]} ${className}`}
+      className={`relative shrink-0 overflow-hidden rounded-[1.35rem] border border-border/80 bg-surface shadow-[var(--shadow)] ring-1 ring-accent/20 ${sizeClasses[size]} ${className}`}
     >
       <Image
         src={siteConfig.profilePhoto}
