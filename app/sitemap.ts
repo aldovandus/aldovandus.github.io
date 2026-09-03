@@ -2,7 +2,9 @@ import type { MetadataRoute } from "next";
 import { getAllProjects } from "@/lib/projects";
 import { routing } from "@/i18n/routing";
 
-const baseUrl = "https://aldovandus.dev";
+export const dynamic = "force-static";
+
+const baseUrl = "https://aldovandus.github.io";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["", "/projects", "/about", "/contact"];
