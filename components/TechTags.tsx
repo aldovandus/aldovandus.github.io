@@ -12,13 +12,13 @@ export function TechTags({ technologies, limit }: TechTagsProps) {
       {visible.map((tech) => (
         <span
           key={tech}
-          className="rounded-md bg-accent-muted px-2 py-0.5 text-xs font-medium text-accent"
+          className="font-mono border border-border bg-surface px-2 py-0.5 text-[0.65rem] font-medium tracking-wide text-muted"
         >
           {tech}
         </span>
       ))}
       {remaining > 0 && (
-        <span className="rounded-md bg-surface px-2 py-0.5 text-xs font-medium text-muted">
+        <span className="font-mono border border-border px-2 py-0.5 text-[0.65rem] font-medium text-muted">
           +{remaining}
         </span>
       )}

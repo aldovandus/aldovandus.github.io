@@ -6,7 +6,8 @@
   "nav": {
     "projects": "Projects",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cv": "Download CV"
   },
   "hero": {
     "name": "Aldo Vandus",
@@ -15,7 +16,6 @@
     "availability": "Open to collaborations",
     "ctaProjects": "View projects",
     "ctaContact": "Get in touch",
-    "ctaCv": "Download CV",
     "profileAlt": "Profile photo of Aldo Vandus"
   },
   "home": {

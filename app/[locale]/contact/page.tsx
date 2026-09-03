@@ -19,8 +19,8 @@ export default async function ContactPage({ params }: Props) {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          width="18"
+          height="18"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -41,8 +41,8 @@ export default async function ContactPage({ params }: Props) {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          width="18"
+          height="18"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -65,8 +65,8 @@ export default async function ContactPage({ params }: Props) {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          width="18"
+          height="18"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -84,10 +84,10 @@ export default async function ContactPage({ params }: Props) {
   ];
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+    <div className="page-shell mx-auto max-w-3xl py-16 sm:py-24">
       <SectionHeading as="h1" title={t("title")} subtitle={t("subtitle")} />
 
-      <div className="animate-fade-in space-y-4">
+      <div className="animate-fade-in space-y-px border border-border bg-border">
         {contacts.map((contact) => (
           <a
             key={contact.href}
@@ -95,20 +95,20 @@ export default async function ContactPage({ params }: Props) {
             target={contact.external ? "_blank" : undefined}
             rel={contact.external ? "noopener noreferrer" : undefined}
             download={contact.download || undefined}
-            className="card card-interactive group flex items-center gap-5 p-6"
+            className="group flex items-center gap-5 bg-card p-6 transition-colors hover:bg-accent-subtle"
           >
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent-muted text-accent transition-colors group-hover:bg-accent group-hover:text-white dark:group-hover:text-background">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center border border-border bg-surface text-accent transition-colors group-hover:border-accent group-hover:bg-accent group-hover:text-card">
               {contact.icon}
             </span>
             <div className="min-w-0 flex-1">
-              <p className="text-xs font-semibold uppercase tracking-wider text-muted">
+              <p className="font-mono text-[0.65rem] font-medium uppercase tracking-[0.14em] text-muted">
                 {contact.label}
               </p>
               <p className="mt-1 truncate text-base font-medium text-foreground transition-colors group-hover:text-accent">
                 {contact.value}
               </p>
             </div>
-            <span className="shrink-0 text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent">
+            <span className="shrink-0 font-mono text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent">
               {contact.external ? "↗" : contact.download ? "↓" : "→"}
             </span>
           </a>

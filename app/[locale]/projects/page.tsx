@@ -14,19 +14,16 @@ export default async function ProjectsPage({ params }: Props) {
   const projects = getAllProjects();
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
-      <SectionHeading
-        as="h1"
-        title={t("title")}
-        subtitle={t("subtitle")}
-      />
-      <div className="grid gap-6 sm:grid-cols-2">
+    <div className="page-shell mx-auto max-w-6xl py-16 sm:py-24">
+      <SectionHeading as="h1" title={t("title")} subtitle={t("subtitle")} />
+      <div className="grid gap-px border border-border bg-border sm:grid-cols-2">
         {projects.map((project) => (
-          <ProjectCard
-            key={project.slug}
-            project={project}
-            locale={locale as Locale}
-          />
+          <div key={project.slug} className="bg-background">
+            <ProjectCard
+              project={project}
+              locale={locale as Locale}
+            />
+          </div>
         ))}
       </div>
     </div>

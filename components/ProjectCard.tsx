@@ -17,22 +17,21 @@ export function ProjectCard({ project, locale }: ProjectCardProps) {
   const t = useTranslations("projects");
 
   return (
-    <article className="card card-interactive group flex flex-col overflow-hidden">
+    <article className="group flex h-full flex-col">
       <div className="relative aspect-[16/10] overflow-hidden bg-surface">
         <Image
           src={project.image}
           alt={getLocalizedValue(project.title, locale)}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-        <span className="absolute right-4 top-4 rounded-full bg-card/90 px-3 py-1 text-xs font-medium text-muted backdrop-blur-sm">
+        <span className="absolute left-0 top-0 font-mono bg-background/90 px-3 py-1.5 text-[0.65rem] font-medium tracking-wider text-muted backdrop-blur-sm">
           {project.year}
         </span>
       </div>
 
-      <div className="flex flex-1 flex-col p-6">
+      <div className="flex flex-1 flex-col border-t border-border p-6">
         <h3 className="font-display text-lg font-semibold tracking-tight text-foreground transition-colors group-hover:text-accent">
           {getLocalizedValue(project.title, locale)}
         </h3>
@@ -48,7 +47,7 @@ export function ProjectCard({ project, locale }: ProjectCardProps) {
         <div className="mt-auto flex flex-wrap items-center gap-5 border-t border-border pt-5">
           <Link
             href={`/projects/${project.slug}`}
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-accent-hover"
+            className="inline-flex items-center gap-1.5 font-mono text-xs font-medium uppercase tracking-wider text-accent transition-colors hover:text-accent-hover"
           >
             {t("caseStudy")}
             <span className="transition-transform group-hover:translate-x-0.5">→</span>
@@ -58,7 +57,7 @@ export function ProjectCard({ project, locale }: ProjectCardProps) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-muted transition-colors hover:text-foreground"
+              className="inline-flex items-center gap-1.5 font-mono text-xs font-medium uppercase tracking-wider text-muted transition-colors hover:text-foreground"
             >
               {t("liveDemo")} ↗
             </a>

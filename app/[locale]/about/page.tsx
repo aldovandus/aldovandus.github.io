@@ -21,9 +21,9 @@ export default async function AboutPage({ params }: Props) {
   const stack = t.raw("stack") as Record<string, string>;
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+    <div className="page-shell mx-auto max-w-3xl py-16 sm:py-24">
       <div className="mb-16 flex flex-col items-center gap-8 sm:flex-row sm:items-start">
-        <ProfilePhoto alt={hero("profileAlt")} size="md" className="sm:mt-1" />
+        <ProfilePhoto alt={hero("profileAlt")} size="lg" className="sm:mt-1" />
         <SectionHeading
           as="h1"
           title={t("title")}
@@ -33,17 +33,15 @@ export default async function AboutPage({ params }: Props) {
       </div>
 
       <section className="mb-16 animate-fade-in">
-        <h2 className="mb-8 text-sm font-semibold uppercase tracking-wider text-accent">
-          {t("journeyTitle")}
-        </h2>
-        <div className="relative space-y-8 border-l border-border pl-8">
+        <h2 className="section-label mb-8">{t("journeyTitle")}</h2>
+        <div className="relative space-y-0 border-l border-border pl-8">
           {journey.map((item) => (
-            <div key={item.period} className="relative">
-              <span className="absolute -left-[calc(2rem+5px)] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-accent bg-background" />
-              <p className="text-xs font-semibold uppercase tracking-wider text-accent">
+            <div key={item.period} className="relative border-b border-border/70 py-7 last:border-0">
+              <span className="absolute -left-[calc(2rem+3.5px)] top-9 h-1.5 w-1.5 bg-accent" />
+              <p className="font-mono text-[0.65rem] font-medium uppercase tracking-[0.14em] text-accent">
                 {item.period}
               </p>
-              <h3 className="font-display mt-1 font-semibold text-foreground">
+              <h3 className="font-display mt-2 text-lg font-semibold tracking-tight text-foreground">
                 {item.role}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-muted">
@@ -55,16 +53,14 @@ export default async function AboutPage({ params }: Props) {
       </section>
 
       <section className="mb-16 animate-fade-in">
-        <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-accent">
-          {t("approachTitle")}
-        </h2>
-        <ul className="space-y-3">
+        <h2 className="section-label mb-6">{t("approachTitle")}</h2>
+        <ul className="space-y-0">
           {approach.map((item) => (
             <li
               key={item}
-              className="flex gap-4 border-b border-border/70 py-4 text-sm leading-relaxed text-muted last:border-0"
+              className="flex gap-4 border-b border-border py-4 text-sm leading-relaxed text-muted last:border-0"
             >
-              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+              <span className="mt-2 h-px w-3 shrink-0 bg-accent" />
               {item}
             </li>
           ))}
@@ -72,13 +68,11 @@ export default async function AboutPage({ params }: Props) {
       </section>
 
       <section className="mb-16 animate-fade-in">
-        <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-accent">
-          {t("stackTitle")}
-        </h2>
-        <div className="grid gap-6 sm:grid-cols-2">
+        <h2 className="section-label mb-6">{t("stackTitle")}</h2>
+        <div className="grid gap-px border border-border bg-border sm:grid-cols-2">
           {Object.entries(stack).map(([key, value]) => (
-            <div key={key} className="border-t border-border pt-4">
-              <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-accent">
+            <div key={key} className="bg-card p-5">
+              <h3 className="mb-2 font-mono text-[0.65rem] font-medium uppercase tracking-[0.14em] text-accent">
                 {key}
               </h3>
               <p className="text-sm leading-relaxed text-muted">{value}</p>

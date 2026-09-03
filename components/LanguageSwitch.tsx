@@ -15,15 +15,15 @@ export function LanguageSwitch() {
   }
 
   return (
-    <div className="flex items-center gap-0.5 rounded-lg border border-border bg-surface p-0.5 text-xs font-semibold">
+    <div className="flex items-center gap-0.5 border border-border bg-surface p-0.5 font-mono text-[0.65rem] font-semibold">
       {(["it", "en"] as const).map((code) => (
         <button
           key={code}
           type="button"
           onClick={() => switchLocale(code)}
-          className={`rounded-md px-2.5 py-1 uppercase transition-all ${
+          className={`px-2.5 py-1 uppercase transition-all ${
             locale === code
-              ? "bg-accent text-white shadow-sm dark:text-background"
+              ? "bg-accent text-card"
               : "text-muted hover:text-foreground"
           }`}
         >

@@ -27,22 +27,22 @@ export function Footer() {
   ];
 
   return (
-    <footer className="mt-auto border-t border-border/50">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
+    <footer className="mt-auto border-t border-border">
+      <div className="mx-auto flex max-w-6xl flex-col gap-6 py-10 pl-[calc(1.5rem+2.5rem)] pr-6 sm:flex-row sm:items-center sm:justify-between sm:pl-[calc(2rem+3rem)] sm:pr-8 lg:pl-[calc(2rem+3.5rem)]">
         <div>
-          <p className="text-sm text-muted">
+          <p className="font-mono text-xs tracking-wide text-muted">
             © {year}{" "}
-            <span className="font-display font-semibold text-foreground">
+            <span className="font-display text-sm font-semibold tracking-tight text-foreground">
               {siteConfig.name}
             </span>
           </p>
-          <p className="mt-1.5 flex items-center gap-2 text-xs text-muted">
+          <p className="mt-2 flex items-center gap-2 font-mono text-[0.65rem] uppercase tracking-[0.12em] text-muted">
             <span className="status-dot" />
             {t("builtWith")}
           </p>
         </div>
 
-        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-muted">
+        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-xs uppercase tracking-[0.08em] text-muted">
           {links.map((link) => (
             <a
               key={link.href}
