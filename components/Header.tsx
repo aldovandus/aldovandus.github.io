@@ -20,13 +20,13 @@ export function Header() {
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between pl-[calc(1.5rem+2.5rem)] pr-6 sm:pl-[calc(2rem+3rem)] sm:pr-8 lg:pl-[calc(2rem+3.5rem)]">
         <Link
           href="/"
-          className="group flex items-center gap-3 text-foreground"
+          className="group flex flex-col justify-center gap-0.5 text-foreground"
         >
-          <span className="font-mono flex h-7 w-7 items-center justify-center border border-accent bg-accent text-[0.65rem] font-semibold tracking-wider text-card">
-            AV
-          </span>
-          <span className="font-display text-sm font-semibold tracking-tight transition-colors group-hover:text-accent">
+          <span className="font-display text-sm font-semibold leading-none tracking-tight transition-opacity group-hover:opacity-70">
             {siteConfig.name}
+          </span>
+          <span className="font-mono text-[0.6rem] font-medium uppercase leading-none tracking-[0.16em] text-muted">
+            {t("tagline")}
           </span>
         </Link>
 
