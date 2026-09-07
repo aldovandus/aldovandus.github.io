@@ -21,8 +21,8 @@ export default async function AboutPage({ params }: Props) {
   const stack = t.raw("stack") as Record<string, string>;
 
   return (
-    <div className="page-shell mx-auto max-w-3xl py-16 sm:py-24">
-      <div className="mb-16 flex flex-col items-center gap-8 sm:flex-row sm:items-start">
+    <div className="page-shell mx-auto max-w-3xl py-12 sm:py-24">
+      <div className="mb-12 flex flex-col items-center gap-6 sm:mb-16 sm:flex-row sm:items-start sm:gap-8">
         <ProfilePhoto alt={hero("profileAlt")} size="lg" className="sm:mt-1" />
         <SectionHeading
           as="h1"
@@ -34,10 +34,10 @@ export default async function AboutPage({ params }: Props) {
 
       <section className="mb-16 animate-fade-in">
         <h2 className="section-label mb-8">{t("journeyTitle")}</h2>
-        <div className="relative space-y-0 border-l border-border pl-8">
+        <div className="relative space-y-0 border-l border-border pl-6 sm:pl-8">
           {journey.map((item) => (
-            <div key={item.period} className="relative border-b border-border/70 py-7 last:border-0">
-              <span className="absolute -left-[calc(2rem+3.5px)] top-9 h-1.5 w-1.5 bg-accent" />
+            <div key={item.period} className="relative border-b border-border/70 py-5 last:border-0 sm:py-7">
+              <span className="absolute -left-[calc(1.5rem+3.5px)] top-8 h-1.5 w-1.5 bg-accent sm:-left-[calc(2rem+3.5px)] sm:top-9" />
               <p className="font-mono text-[0.65rem] font-medium uppercase tracking-[0.14em] text-accent">
                 {item.period}
               </p>
@@ -82,7 +82,7 @@ export default async function AboutPage({ params }: Props) {
       </section>
 
       <section className="cta-band animate-fade-in overflow-hidden">
-        <div className="p-8 sm:p-10">
+        <div className="p-6 sm:p-10">
           <h2 className="font-display mb-4 text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
             {t("aiTitle")}
           </h2>

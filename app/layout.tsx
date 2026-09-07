@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Outfit } from "next/font/google";
 import "./globals.css";
 
@@ -23,6 +23,12 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Aldo Vandus",
   description: "AI Full Stack Developer Portfolio",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

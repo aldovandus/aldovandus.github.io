@@ -14,7 +14,7 @@ export default async function ProjectsPage({ params }: Props) {
   const projects = getAllProjects();
 
   return (
-    <div className="page-shell mx-auto max-w-6xl py-16 sm:py-24">
+    <div className="page-shell mx-auto max-w-6xl py-12 sm:py-24">
       <SectionHeading as="h1" title={t("title")} subtitle={t("subtitle")} />
       <div className="grid gap-px border border-border bg-border sm:grid-cols-2">
         {projects.map((project) => (

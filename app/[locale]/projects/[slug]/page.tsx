@@ -46,10 +46,10 @@ export default async function CaseStudyPage({ params }: Props) {
   const typedLocale = locale as Locale;
 
   return (
-    <article className="page-shell mx-auto max-w-3xl py-16 sm:py-24">
+    <article className="page-shell mx-auto max-w-3xl py-12 sm:py-24">
       <Link
         href="/projects"
-        className="mb-10 inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-wider text-muted transition-colors hover:text-accent"
+        className="mb-8 inline-flex min-h-[2.75rem] items-center gap-1.5 font-mono text-xs uppercase tracking-wider text-muted transition-colors hover:text-accent sm:mb-10"
       >
         ← {caseStudy("backToProjects")}
       </Link>
@@ -69,10 +69,10 @@ export default async function CaseStudyPage({ params }: Props) {
         <p className="mb-4 font-mono text-[0.65rem] font-medium uppercase tracking-[0.14em] text-accent">
           {project.year}
         </p>
-        <h1 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+        <h1 className="font-display text-2xl font-semibold tracking-tight text-foreground sm:text-4xl">
           {getLocalizedValue(project.title, typedLocale)}
         </h1>
-        <p className="mt-4 text-lg leading-relaxed text-muted">
+        <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
           {getLocalizedValue(project.description, typedLocale)}
         </p>
         {project.liveUrl && (
@@ -89,11 +89,11 @@ export default async function CaseStudyPage({ params }: Props) {
         )}
       </header>
 
-      <div className="animate-fade-in border border-border bg-card p-8 sm:p-10">
+      <div className="animate-fade-in border border-border bg-card p-6 sm:p-10">
         <MarkdownContent content={getLocalizedValue(project.content, typedLocale)} />
       </div>
 
-      <section className="mt-10 border border-border bg-card p-8">
+      <section className="mt-8 border border-border bg-card p-6 sm:mt-10 sm:p-8">
         <h2 className="section-label mb-5">{caseStudy("stack")}</h2>
         <TechTags technologies={project.technologies} />
       </section>

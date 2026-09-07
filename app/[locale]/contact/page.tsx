@@ -84,7 +84,7 @@ export default async function ContactPage({ params }: Props) {
   ];
 
   return (
-    <div className="page-shell mx-auto max-w-3xl py-16 sm:py-24">
+    <div className="page-shell mx-auto max-w-3xl py-12 sm:py-24">
       <SectionHeading as="h1" title={t("title")} subtitle={t("subtitle")} />
 
       <div className="animate-fade-in space-y-px border border-border bg-border">
@@ -95,16 +95,16 @@ export default async function ContactPage({ params }: Props) {
             target={contact.external ? "_blank" : undefined}
             rel={contact.external ? "noopener noreferrer" : undefined}
             download={contact.download || undefined}
-            className="group flex items-center gap-5 bg-card p-6 transition-colors hover:bg-accent-subtle"
+            className="group flex items-center gap-4 bg-card p-5 transition-colors hover:bg-accent-subtle sm:gap-5 sm:p-6"
           >
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center border border-border bg-surface text-accent transition-colors group-hover:border-accent group-hover:bg-accent group-hover:text-card">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center border border-border bg-surface text-accent transition-colors group-hover:border-accent group-hover:bg-accent group-hover:text-card sm:h-11 sm:w-11">
               {contact.icon}
             </span>
             <div className="min-w-0 flex-1">
               <p className="font-mono text-[0.65rem] font-medium uppercase tracking-[0.14em] text-muted">
                 {contact.label}
               </p>
-              <p className="mt-1 truncate text-base font-medium text-foreground transition-colors group-hover:text-accent">
+              <p className="mt-1 break-all text-[0.9375rem] font-medium text-foreground transition-colors group-hover:text-accent sm:truncate sm:text-base">
                 {contact.value}
               </p>
             </div>

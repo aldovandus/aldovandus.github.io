@@ -21,27 +21,27 @@ export default async function HomePage({ params }: Props) {
   const lastName = restName.join(" ");
 
   return (
-    <div className="page-shell mx-auto max-w-6xl pb-20 pt-12 sm:pb-28 sm:pt-16">
-      <section className="relative grid items-end gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-14 xl:gap-20">
+    <div className="page-shell mx-auto max-w-6xl pb-16 pt-8 sm:pb-28 sm:pt-16">
+      <section className="relative grid items-end gap-8 sm:gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-14 xl:gap-20">
         <div className="relative z-10 max-w-xl lg:max-w-none lg:pb-8">
-          <p className="section-label mb-8 animate-fade-in">
+          <p className="section-label mb-6 animate-fade-in sm:mb-8">
             {t("availability")}
           </p>
 
-          <h1 className="hero-name animate-fade-in-delay-1 text-[clamp(3rem,7.5vw,5.75rem)] text-foreground">
+          <h1 className="hero-name animate-fade-in-delay-1 text-[clamp(2.5rem,12vw,5.75rem)] text-foreground">
             <span>{firstName}</span>
             <span className="text-accent">{lastName || firstName}</span>
           </h1>
 
-          <p className="animate-fade-in-delay-2 mt-8 max-w-md font-mono text-sm leading-relaxed tracking-wide text-foreground/80 sm:text-[0.95rem]">
+          <p className="animate-fade-in-delay-2 mt-6 max-w-md font-mono text-[0.8125rem] leading-relaxed tracking-wide text-foreground/80 sm:mt-8 sm:text-[0.95rem]">
             {t("headline")}
           </p>
 
-          <p className="animate-fade-in-delay-2 mt-5 max-w-lg text-base leading-relaxed text-muted sm:text-lg">
+          <p className="animate-fade-in-delay-2 mt-4 max-w-lg text-[0.9375rem] leading-relaxed text-muted sm:mt-5 sm:text-lg">
             {t("subtitle")}
           </p>
 
-          <div className="animate-fade-in-delay-3 mt-10 flex flex-wrap items-center gap-3">
+          <div className="animate-fade-in-delay-3 btn-row-mobile mt-8 flex flex-wrap items-center gap-3 sm:mt-10 sm:flex-row">
             <Link href="/projects" className="btn-primary">
               {t("ctaProjects")}
             </Link>
@@ -51,7 +51,7 @@ export default async function HomePage({ params }: Props) {
           </div>
         </div>
 
-        <div className="animate-fade-in relative -mr-[var(--shell-pad-x)] min-h-[22rem] sm:min-h-[28rem] lg:mr-0 lg:min-h-[32rem]">
+        <div className="animate-fade-in relative -mr-[var(--shell-pad-x)] min-h-[18rem] sm:min-h-[28rem] lg:mr-0 lg:min-h-[32rem]">
           <div className="absolute inset-0 overflow-hidden border-y border-border lg:border lg:border-border">
             <Image
               src={siteConfig.profilePhoto}
@@ -73,7 +73,7 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="mt-24 sm:mt-32">
+      <section className="mt-16 sm:mt-32">
         <SectionHeading
           label={home("featuredLabel")}
           title={home("featuredTitle")}
@@ -97,18 +97,18 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="cta-band animate-fade-in mt-24 sm:mt-32">
-        <div className="flex flex-col gap-8 p-8 sm:flex-row sm:items-end sm:justify-between sm:p-10">
+      <section className="cta-band animate-fade-in mt-16 sm:mt-32">
+        <div className="flex flex-col gap-6 p-6 sm:flex-row sm:items-end sm:justify-between sm:gap-8 sm:p-10">
           <div className="max-w-xl">
             <p className="section-label mb-4">{home("ctaLabel")}</p>
-            <h2 className="font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+            <h2 className="font-display text-xl font-semibold tracking-tight text-foreground sm:text-3xl">
               {home("ctaTitle")}
             </h2>
-            <p className="mt-3 leading-relaxed text-muted">
+            <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted sm:text-base">
               {home("ctaSubtitle")}
             </p>
           </div>
-          <div className="flex flex-wrap gap-3">
+          <div className="btn-row-mobile flex flex-wrap gap-3 sm:flex-row">
             <Link href="/contact" className="btn-primary">
               {home("ctaContact")}
             </Link>

@@ -31,7 +31,7 @@ export function ProjectCard({ project, locale }: ProjectCardProps) {
         </span>
       </div>
 
-      <div className="flex flex-1 flex-col border-t border-border p-6">
+      <div className="flex flex-1 flex-col border-t border-border p-5 sm:p-6">
         <h3 className="font-display text-lg font-semibold tracking-tight text-foreground transition-colors group-hover:text-accent">
           {getLocalizedValue(project.title, locale)}
         </h3>

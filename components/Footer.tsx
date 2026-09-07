@@ -27,8 +27,8 @@ export function Footer() {
   ];
 
   return (
-    <footer className="mt-auto border-t border-border">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6 py-10 pl-[calc(1.5rem+2.5rem)] pr-6 sm:flex-row sm:items-center sm:justify-between sm:pl-[calc(2rem+3rem)] sm:pr-8 lg:pl-[calc(2rem+3.5rem)]">
+    <footer className="mt-auto border-t border-border pb-[var(--safe-bottom)]">
+      <div className="mx-auto flex max-w-6xl flex-col gap-6 py-8 pl-shell pr-shell sm:flex-row sm:items-center sm:justify-between sm:py-10">
         <div>
           <p className="font-mono text-xs tracking-wide text-muted">
             © {year}{" "}

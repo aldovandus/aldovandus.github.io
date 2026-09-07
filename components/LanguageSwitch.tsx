@@ -21,7 +21,7 @@ export function LanguageSwitch() {
           key={code}
           type="button"
           onClick={() => switchLocale(code)}
-          className={`px-2.5 py-1 uppercase transition-all ${
+          className={`min-h-[2rem] min-w-[2rem] px-2.5 py-1 uppercase transition-all ${
             locale === code
               ? "bg-accent text-card"
               : "text-muted hover:text-foreground"

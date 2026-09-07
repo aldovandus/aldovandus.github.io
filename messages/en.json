@@ -8,7 +8,10 @@
     "about": "About",
     "contact": "Contact",
     "cv": "Download CV",
-    "tagline": "AI Full Stack"
+    "tagline": "AI Full Stack",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation"
   },
   "hero": {
     "name": "Aldo Vandus",
